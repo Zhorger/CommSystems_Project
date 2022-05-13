@@ -42,6 +42,7 @@
             this.tBoxDataIn = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtTransmitted = new System.Windows.Forms.TextBox();
             this.btnA1 = new System.Windows.Forms.Button();
             this.btnA2 = new System.Windows.Forms.Button();
             this.btnA3 = new System.Windows.Forms.Button();
@@ -82,7 +83,6 @@
             this.btnClearSample = new System.Windows.Forms.Button();
             this.listSample = new System.Windows.Forms.ListBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.txtTransmitted = new System.Windows.Forms.TextBox();
             this.btnClearRecieved = new System.Windows.Forms.Button();
             this.btnClearTransmittion = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -217,6 +217,14 @@
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Transmitted";
+            // 
+            // txtTransmitted
+            // 
+            this.txtTransmitted.Location = new System.Drawing.Point(11, 23);
+            this.txtTransmitted.Multiline = true;
+            this.txtTransmitted.Name = "txtTransmitted";
+            this.txtTransmitted.Size = new System.Drawing.Size(460, 258);
+            this.txtTransmitted.TabIndex = 5;
             // 
             // btnA1
             // 
@@ -612,9 +620,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(26, 118);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 18);
+            this.label7.Size = new System.Drawing.Size(104, 18);
             this.label7.TabIndex = 3;
-            this.label7.Text = "Sleep Time";
+            this.label7.Text = "Sleep Time (s)";
             // 
             // txtSleepTime
             // 
@@ -670,14 +678,6 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Positions";
             // 
-            // txtTransmitted
-            // 
-            this.txtTransmitted.Location = new System.Drawing.Point(11, 23);
-            this.txtTransmitted.Multiline = true;
-            this.txtTransmitted.Name = "txtTransmitted";
-            this.txtTransmitted.Size = new System.Drawing.Size(460, 258);
-            this.txtTransmitted.TabIndex = 5;
-            // 
             // btnClearRecieved
             // 
             this.btnClearRecieved.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -713,21 +713,20 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1055, 66);
+            this.label6.Location = new System.Drawing.Point(1055, 64);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(599, 50);
+            this.label6.Size = new System.Drawing.Size(599, 35);
             this.label6.TabIndex = 49;
             this.label6.Text = resources.GetString("label6.Text");
             // 
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1055, 39);
+            this.label10.Location = new System.Drawing.Point(1055, 47);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(526, 27);
+            this.label10.Size = new System.Drawing.Size(526, 17);
             this.label10.TabIndex = 50;
-            this.label10.Text = "STEP 6: you must now re-enter a sleep time. Then step 3, step 4, step 5 and step " +
-    "6 may repeat.";
+            this.label10.Text = "STEP 6: you must now re-enter a sleep time. Then steps 3, 4, 5 and 6 may repeat.";
             // 
             // label11
             // 
@@ -742,11 +741,11 @@
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(404, 153);
+            this.label12.Location = new System.Drawing.Point(404, 152);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(680, 22);
+            this.label12.Size = new System.Drawing.Size(356, 22);
             this.label12.TabIndex = 52;
-            this.label12.Text = "STEP 4: you must now enter a \"Sleep Time\" of any specified amount.";
+            this.label12.Text = "STEP 4: you must now enter a \"Sleep Time\" in seconds.";
             // 
             // label13
             // 
@@ -765,7 +764,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(610, 35);
             this.label14.TabIndex = 54;
-            this.label14.Text = "STEP 2: your first click on any of the buttons within the sample grid, indicate t" +
+            this.label14.Text = "STEP 2: your first click on any of the buttons within the sample grid indicates t" +
     "he initial position - which will be colored blue.";
             // 
             // label15
@@ -780,9 +779,9 @@
             // label16
             // 
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1055, 116);
+            this.label16.Location = new System.Drawing.Point(1055, 99);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(526, 22);
+            this.label16.Size = new System.Drawing.Size(580, 14);
             this.label16.TabIndex = 56;
             this.label16.Text = "STEP 8: click on the \"Prep Sequence\" button, which will move the sequence to the " +
     "\"Transmitted\" box.";
@@ -790,27 +789,27 @@
             // label17
             // 
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(1055, 138);
+            this.label17.Location = new System.Drawing.Point(1055, 117);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(526, 15);
             this.label17.TabIndex = 57;
-            this.label17.Text = "STEP 9: Select a COM-PORT in which your board is connected to, using the drop dow" +
-    "n menu.";
+            this.label17.Text = "STEP 9: Select a COM-PORT in which your board is connected to using the drop down" +
+    " menu.";
             // 
             // label18
             // 
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(1055, 159);
+            this.label18.Location = new System.Drawing.Point(1055, 137);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(580, 35);
             this.label18.TabIndex = 58;
-            this.label18.Text = "STEP 10: click the \"OPEN\" button, in the top left. Following this a progress bar " +
-    "underneath the open button will begin to fill up.";
+            this.label18.Text = "STEP 10: click the \"OPEN\" button in the top left. Then the progress bar underneat" +
+    "h the \"OPEN\" button will begin to fill up.";
             // 
             // label19
             // 
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(1055, 194);
+            this.label19.Location = new System.Drawing.Point(1055, 172);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(526, 15);
             this.label19.TabIndex = 59;
@@ -820,7 +819,7 @@
             // label20
             // 
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(1055, 219);
+            this.label20.Location = new System.Drawing.Point(1055, 192);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(653, 15);
             this.label20.TabIndex = 60;

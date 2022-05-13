@@ -121,10 +121,10 @@
     <value>11, 5</value>
   </metadata>
   <data name="label6.Text" xml:space="preserve">
-    <value>STEP 7: after the last iteration of step 5 and step 6, you must finally select a button within the sample grid to indicate the final position - which will be colored yellow. Now double check the current sequence to make sure that the sequence is what you intended to create.</value>
+    <value>STEP 7: after the last iteration of steps 5 and 6, you must select a button within the sample grid to indicate the final position - which will be colored yellow. Now double check the current sequence to ensure it is correct.</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
-    <value>STEP 1: enter the "Sequence Length" (This does NOT include the initial and final positions within a sequence). Once the Sequence Length has been entered, all of buttons with "Sample Grid" will become enabled.</value>
+    <value>STEP 1: enter the "Sequence Length" (This does NOT include the initial and final positions within a sequence). Once the Sequence Length has been entered, all of the buttons within "Sample Grid" will become enabled.</value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>36</value>
