@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cBoxCOMPORT = new System.Windows.Forms.ComboBox();
@@ -84,6 +85,19 @@
             this.txtTransmitted = new System.Windows.Forms.TextBox();
             this.btnClearRecieved = new System.Windows.Forms.Button();
             this.btnClearTransmittion = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -98,7 +112,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cBoxCOMPORT);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(69, 32);
+            this.groupBox1.Location = new System.Drawing.Point(56, 81);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(259, 81);
             this.groupBox1.TabIndex = 0;
@@ -127,7 +141,7 @@
             this.groupBox2.Controls.Add(this.btnClose);
             this.groupBox2.Controls.Add(this.btnOpen);
             this.groupBox2.Controls.Add(this.progressBar1);
-            this.groupBox2.Location = new System.Drawing.Point(48, 143);
+            this.groupBox2.Location = new System.Drawing.Point(23, 200);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(246, 100);
             this.groupBox2.TabIndex = 1;
@@ -162,7 +176,7 @@
             // 
             // btnSendData
             // 
-            this.btnSendData.Location = new System.Drawing.Point(300, 162);
+            this.btnSendData.Location = new System.Drawing.Point(275, 219);
             this.btnSendData.Name = "btnSendData";
             this.btnSendData.Size = new System.Drawing.Size(88, 61);
             this.btnSendData.TabIndex = 4;
@@ -186,7 +200,7 @@
             // 
             this.groupBox3.Controls.Add(this.tBoxDataIn);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(22, 539);
+            this.groupBox3.Location = new System.Drawing.Point(21, 595);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(483, 286);
             this.groupBox3.TabIndex = 9;
@@ -197,7 +211,7 @@
             // 
             this.groupBox4.Controls.Add(this.txtTransmitted);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(22, 249);
+            this.groupBox4.Location = new System.Drawing.Point(21, 305);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(483, 284);
             this.groupBox4.TabIndex = 10;
@@ -495,7 +509,7 @@
             this.groupBox5.Controls.Add(this.btnA12);
             this.groupBox5.Controls.Add(this.btnB1);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(728, 617);
+            this.groupBox5.Location = new System.Drawing.Point(771, 722);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(675, 160);
             this.groupBox5.TabIndex = 35;
@@ -533,7 +547,7 @@
             this.btnUploadSequence.Controls.Add(this.label7);
             this.btnUploadSequence.Controls.Add(this.txtSleepTime);
             this.btnUploadSequence.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUploadSequence.Location = new System.Drawing.Point(1076, 200);
+            this.btnUploadSequence.Location = new System.Drawing.Point(1119, 305);
             this.btnUploadSequence.Name = "btnUploadSequence";
             this.btnUploadSequence.Size = new System.Drawing.Size(303, 411);
             this.btnUploadSequence.TabIndex = 42;
@@ -591,7 +605,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(291, 36);
             this.label8.TabIndex = 4;
-            this.label8.Text = "NOTE: Please re-enter \"Sleep Time\" after selecting a sample pair:";
+            this.label8.Text = "NOTE: Please re-enter \"Sleep Time\" after selecting a sample cell or a pad cell:";
             // 
             // label7
             // 
@@ -624,7 +638,7 @@
             // btnClearSample
             // 
             this.btnClearSample.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearSample.Location = new System.Drawing.Point(998, 794);
+            this.btnClearSample.Location = new System.Drawing.Point(1041, 899);
             this.btnClearSample.Name = "btnClearSample";
             this.btnClearSample.Size = new System.Drawing.Size(101, 41);
             this.btnClearSample.TabIndex = 42;
@@ -649,7 +663,7 @@
             this.groupBox6.Controls.Add(this.label5);
             this.groupBox6.Controls.Add(this.listSample);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(749, 200);
+            this.groupBox6.Location = new System.Drawing.Point(792, 305);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(303, 411);
             this.groupBox6.TabIndex = 45;
@@ -667,7 +681,7 @@
             // btnClearRecieved
             // 
             this.btnClearRecieved.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearRecieved.Location = new System.Drawing.Point(529, 680);
+            this.btnClearRecieved.Location = new System.Drawing.Point(528, 736);
             this.btnClearRecieved.Name = "btnClearRecieved";
             this.btnClearRecieved.Size = new System.Drawing.Size(101, 41);
             this.btnClearRecieved.TabIndex = 46;
@@ -678,7 +692,7 @@
             // btnClearTransmittion
             // 
             this.btnClearTransmittion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearTransmittion.Location = new System.Drawing.Point(529, 375);
+            this.btnClearTransmittion.Location = new System.Drawing.Point(528, 431);
             this.btnClearTransmittion.Name = "btnClearTransmittion";
             this.btnClearTransmittion.Size = new System.Drawing.Size(101, 41);
             this.btnClearTransmittion.TabIndex = 47;
@@ -686,11 +700,151 @@
             this.btnClearTransmittion.UseVisualStyleBackColor = true;
             this.btnClearTransmittion.Click += new System.EventHandler(this.btnClearTransmittion_Click);
             // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(679, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(680, 22);
+            this.label4.TabIndex = 48;
+            this.label4.Text = "INSTRUCTIONS: In order to start adding steps to a sequence, you must following th" +
+    "e following steps.";
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(1055, 66);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(599, 50);
+            this.label6.TabIndex = 49;
+            this.label6.Text = resources.GetString("label6.Text");
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(1055, 39);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(526, 27);
+            this.label10.TabIndex = 50;
+            this.label10.Text = "STEP 6: you must now re-enter a sleep time. Then step 3, step 4, step 5 and step " +
+    "6 may repeat.";
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(404, 175);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(557, 35);
+            this.label11.TabIndex = 51;
+            this.label11.Text = "STEP 5: you are then able to click on another button within the sample grid, whic" +
+    "h will indicate a pad - which will be colored red.";
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(404, 153);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(680, 22);
+            this.label12.TabIndex = 52;
+            this.label12.Text = "STEP 4: you must now enter a \"Sleep Time\" of any specified amount.";
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(404, 116);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(582, 37);
+            this.label13.TabIndex = 53;
+            this.label13.Text = "STEP 3: The second button clicked within the sample grid will indicate a sample -" +
+    " which will be colored green.";
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(404, 81);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(610, 35);
+            this.label14.TabIndex = 54;
+            this.label14.Text = "STEP 2: your first click on any of the buttons within the sample grid, indicate t" +
+    "he initial position - which will be colored blue.";
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(404, 44);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(610, 37);
+            this.label15.TabIndex = 55;
+            this.label15.Text = resources.GetString("label15.Text");
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(1055, 116);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(526, 22);
+            this.label16.TabIndex = 56;
+            this.label16.Text = "STEP 8: click on the \"Prep Sequence\" button, which will move the sequence to the " +
+    "\"Transmitted\" box.";
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(1055, 138);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(526, 15);
+            this.label17.TabIndex = 57;
+            this.label17.Text = "STEP 9: Select a COM-PORT in which your board is connected to, using the drop dow" +
+    "n menu.";
+            // 
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(1055, 159);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(580, 35);
+            this.label18.TabIndex = 58;
+            this.label18.Text = "STEP 10: click the \"OPEN\" button, in the top left. Following this a progress bar " +
+    "underneath the open button will begin to fill up.";
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(1055, 194);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(526, 15);
+            this.label19.TabIndex = 59;
+            this.label19.Text = "STEP 11: Once the progress bar is completely filled, click the \"Send Data\" button" +
+    ".";
+            // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(1055, 219);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(653, 15);
+            this.label20.TabIndex = 60;
+            this.label20.Text = "STEP 12: Once your process is completed, click the \"CLOSE\" button to stop communi" +
+    "cations with your microcontroller.";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1716, 870);
+            this.ClientSize = new System.Drawing.Size(1736, 959);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnClearTransmittion);
             this.Controls.Add(this.btnClearRecieved);
             this.Controls.Add(this.groupBox6);
@@ -778,6 +932,19 @@
         private System.Windows.Forms.TextBox txtTransmitted;
         private System.Windows.Forms.Button btnClearRecieved;
         private System.Windows.Forms.Button btnClearTransmittion;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
     }
 }
 
