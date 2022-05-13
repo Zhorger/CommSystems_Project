@@ -1,0 +1,11 @@
+E:\VisualStudio2\ComPort\bin\Debug\ComPort.exe.config
+E:\VisualStudio2\ComPort\bin\Debug\ComPort.exe
+E:\VisualStudio2\ComPort\bin\Debug\ComPort.pdb
+E:\VisualStudio2\ComPort\obj\Debug\ComPort.csproj.AssemblyReference.cache
+E:\VisualStudio2\ComPort\obj\Debug\ComPort.csproj.SuggestedBindingRedirects.cache
+E:\VisualStudio2\ComPort\obj\Debug\ComPort.Form1.resources
+E:\VisualStudio2\ComPort\obj\Debug\ComPort.Properties.Resources.resources
+E:\VisualStudio2\ComPort\obj\Debug\ComPort.csproj.GenerateResource.cache
+E:\VisualStudio2\ComPort\obj\Debug\ComPort.csproj.CoreCompileInputs.cache
+E:\VisualStudio2\ComPort\obj\Debug\ComPort.exe
+E:\VisualStudio2\ComPort\obj\Debug\ComPort.pdb
