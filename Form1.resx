@@ -118,15 +118,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="serialPort1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>11, 5</value>
+    <value>8, 10</value>
   </metadata>
   <data name="label6.Text" xml:space="preserve">
     <value>STEP 7: after the last iteration of steps 5 and 6, you must select a button within the sample grid to indicate the final position - which will be colored yellow. Now double check the current sequence to ensure it is correct.</value>
   </data>
   <data name="label15.Text" xml:space="preserve">
-    <value>STEP 1: enter the "Sequence Length" (This does NOT include the initial and final positions within a sequence). Once the Sequence Length has been entered, all of the buttons within "Sample Grid" will become enabled.</value>
+    <value>STEP 1: enter the "Sequence Length" (This includes: initial/final positions and sleep time, within a sequence). Once the Sequence Length has been entered, all of the buttons within "Sample Grid" will become enabled.</value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>36</value>
+    <value>51</value>
   </metadata>
 </root>

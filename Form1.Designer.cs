@@ -323,7 +323,6 @@
             this.btnA9.TabIndex = 19;
             this.btnA9.Text = "A9";
             this.btnA9.UseVisualStyleBackColor = true;
-            this.btnA9.Click += new System.EventHandler(this.btnA9_Click);
             // 
             // btnA10
             // 
@@ -334,7 +333,6 @@
             this.btnA10.TabIndex = 20;
             this.btnA10.Text = "A10";
             this.btnA10.UseVisualStyleBackColor = true;
-            this.btnA10.Click += new System.EventHandler(this.btnA10_Click);
             // 
             // btnA11
             // 
@@ -345,7 +343,6 @@
             this.btnA11.TabIndex = 21;
             this.btnA11.Text = "A11";
             this.btnA11.UseVisualStyleBackColor = true;
-            this.btnA11.Click += new System.EventHandler(this.btnA11_Click);
             // 
             // btnA12
             // 
@@ -356,7 +353,6 @@
             this.btnA12.TabIndex = 22;
             this.btnA12.Text = "A12";
             this.btnA12.UseVisualStyleBackColor = true;
-            this.btnA12.Click += new System.EventHandler(this.btnA12_Click);
             // 
             // btnB1
             // 
@@ -455,7 +451,6 @@
             this.btnB9.TabIndex = 31;
             this.btnB9.Text = "B9";
             this.btnB9.UseVisualStyleBackColor = true;
-            this.btnB9.Click += new System.EventHandler(this.btnB9_Click);
             // 
             // btnB10
             // 
@@ -466,7 +461,6 @@
             this.btnB10.TabIndex = 32;
             this.btnB10.Text = "B10";
             this.btnB10.UseVisualStyleBackColor = true;
-            this.btnB10.Click += new System.EventHandler(this.btnB10_Click);
             // 
             // btnB11
             // 
@@ -477,7 +471,6 @@
             this.btnB11.TabIndex = 33;
             this.btnB11.Text = "B11";
             this.btnB11.UseVisualStyleBackColor = true;
-            this.btnB11.Click += new System.EventHandler(this.btnB11_Click);
             // 
             // btnB12
             // 
@@ -488,7 +481,6 @@
             this.btnB12.TabIndex = 34;
             this.btnB12.Text = "B12";
             this.btnB12.UseVisualStyleBackColor = true;
-            this.btnB12.Click += new System.EventHandler(this.btnB12_Click);
             // 
             // groupBox5
             // 
@@ -517,7 +509,7 @@
             this.groupBox5.Controls.Add(this.btnA12);
             this.groupBox5.Controls.Add(this.btnB1);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(771, 722);
+            this.groupBox5.Location = new System.Drawing.Point(768, 722);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(675, 160);
             this.groupBox5.TabIndex = 35;
@@ -830,7 +822,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1736, 959);
+            this.ClientSize = new System.Drawing.Size(1701, 951);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);

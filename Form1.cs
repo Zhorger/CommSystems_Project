@@ -103,7 +103,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnA1.BackColor = Color.Green;
@@ -120,6 +120,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnA1.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -139,7 +140,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnA2.BackColor = Color.Green;
@@ -156,6 +157,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnA2.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -175,7 +177,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnA3.BackColor = Color.Green;
@@ -192,6 +194,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnA3.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -211,7 +214,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnA4.BackColor = Color.Green;
@@ -228,6 +231,7 @@ namespace ComPort
                 sleepCase = 1;
                 }
             btnA4.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -247,7 +251,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnA5.BackColor = Color.Green;
@@ -264,6 +268,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnA5.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -283,7 +288,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnA6.BackColor = Color.Green;
@@ -300,6 +305,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnA6.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -319,7 +325,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnA7.BackColor = Color.Green;
@@ -336,6 +342,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnA7.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -355,7 +362,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnA8.BackColor = Color.Green;
@@ -372,150 +379,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnA8.Enabled = false;
-            }
-        }
-
-        private void btnA9_Click(object sender, EventArgs e)
-        {
-            if ((sleepCase != 1) && (ENDCASE != 1))
-            {
-                listCurrentSeq.Items.Add("A9");
-                if (sequenceAmt == seqAmtMax) //final case
-                {
-                    btnA9.BackColor = Color.Yellow; ENDCASE = 1;
-                }
-                else if (totalClicks == 0) //intial case
-                {
-                    btnA9.BackColor = Color.DodgerBlue;
-                    totalClicks = 1;
-                }
-                else
-                {
-                    totalClicks++; sequenceAmt++;
-                    if (clickAmt == 0)
-                    {
-                        btnA9.BackColor = Color.Green;
-                        listSample.Items.Add("A9");
-                        clickAmt++;
-                    }
-                    else if (clickAmt == 1)
-                    {
-                        btnA9.BackColor = Color.Red;
-                        listPad.Items.Add("A9");
-                        clickAmt = 0;
-                    }
-                    txtSleepTime.Enabled = true;
-                    sleepCase = 1;
-                }
-                btnA9.Enabled = false;
-            }
-        }
-
-        private void btnA10_Click(object sender, EventArgs e)
-        {
-            if ((sleepCase != 1) && (ENDCASE != 1))
-            {
-                listCurrentSeq.Items.Add("A10");
-                if (sequenceAmt == seqAmtMax) //final case
-                {
-                    btnA10.BackColor = Color.Yellow; ENDCASE = 1;
-                }
-                else if (totalClicks == 0) //intial case
-                {
-                    btnA10.BackColor = Color.DodgerBlue;
-                    totalClicks = 1;
-                }
-                else
-                {
-                    totalClicks++; sequenceAmt++;
-                    if (clickAmt == 0)
-                    {
-                        btnA10.BackColor = Color.Green;
-                        listSample.Items.Add("A10");
-                        clickAmt++;
-                    }
-                    else if (clickAmt == 1)
-                    {
-                        btnA10.BackColor = Color.Red;
-                        listPad.Items.Add("A10");
-                        clickAmt = 0;
-                    }
-                    txtSleepTime.Enabled = true;
-                    sleepCase = 1;
-                }
-                btnA10.Enabled = false;
-            }
-        }
-
-        private void btnA11_Click(object sender, EventArgs e)
-        {
-            if ((sleepCase != 1) && (ENDCASE != 1))
-            {
-                listCurrentSeq.Items.Add("A11");
-                if (sequenceAmt == seqAmtMax) //final case
-                {
-                    btnA11.BackColor = Color.Yellow; ENDCASE = 1;
-                }
-                else if (totalClicks == 0) //intial case
-                {
-                    btnA11.BackColor = Color.DodgerBlue;
-                    totalClicks = 1;
-                }
-                else
-                {
-                    totalClicks++; sequenceAmt++;
-                    if (clickAmt == 0)
-                    {
-                        btnA11.BackColor = Color.Green;
-                        listSample.Items.Add("A11");
-                        clickAmt++;
-                    }
-                    else if (clickAmt == 1)
-                    {
-                        btnA11.BackColor = Color.Red;
-                        listPad.Items.Add("A11");
-                        clickAmt = 0;
-                    }
-                    txtSleepTime.Enabled = true;
-                    sleepCase = 1;
-                }
-                btnA11.Enabled = false;
-            }
-        }
-
-        private void btnA12_Click(object sender, EventArgs e)
-        {
-            if ((sleepCase != 1) && (ENDCASE != 1))
-            {
-                listCurrentSeq.Items.Add("A12");
-                if (sequenceAmt == seqAmtMax) //final case
-                {
-                    btnA12.BackColor = Color.Yellow; ENDCASE = 1;
-                }
-                else if (totalClicks == 0) //intial case
-                {
-                    btnA12.BackColor = Color.DodgerBlue;
-                    totalClicks = 1;
-                }
-                else
-                {
-                    totalClicks++; sequenceAmt++;
-                    if (clickAmt == 0)
-                    {
-                        btnA12.BackColor = Color.Green;
-                        listSample.Items.Add("A12");
-                        clickAmt++;
-                    }
-                    else if (clickAmt == 1)
-                    {
-                        btnA12.BackColor = Color.Red;
-                        listPad.Items.Add("A12");
-                        clickAmt = 0;
-                    }
-                    txtSleepTime.Enabled = true;
-                    sleepCase = 1;
-                }
-                btnA12.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -535,7 +399,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnB1.BackColor = Color.Green;
@@ -552,6 +416,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnB1.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -571,7 +436,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnB2.BackColor = Color.Green;
@@ -588,6 +453,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnB2.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -607,7 +473,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnB3.BackColor = Color.Green;
@@ -624,6 +490,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnB3.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -642,7 +509,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnB4.BackColor = Color.Green;
@@ -659,6 +526,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnB4.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -677,7 +545,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnB5.BackColor = Color.Green;
@@ -694,6 +562,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnB5.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -713,7 +582,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnB6.BackColor = Color.Green;
@@ -730,6 +599,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnB6.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -749,7 +619,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnB7.BackColor = Color.Green;
@@ -766,6 +636,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnB7.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -785,7 +656,7 @@ namespace ComPort
                 }
                 else
                 {
-                    totalClicks++; sequenceAmt++;
+                    totalClicks++;
                     if (clickAmt == 0)
                     {
                         btnB8.BackColor = Color.Green;
@@ -802,150 +673,7 @@ namespace ComPort
                     sleepCase = 1;
                 }
                 btnB8.Enabled = false;
-            }
-        }
-
-        private void btnB9_Click(object sender, EventArgs e)
-        {
-            if ((sleepCase != 1) && (ENDCASE != 1))
-            {
-                listCurrentSeq.Items.Add("B9");
-                if (sequenceAmt == seqAmtMax) //final case
-                {
-                    btnB9.BackColor = Color.Yellow; ENDCASE = 1;
-                }
-                else if (totalClicks == 0) //intial case
-                {
-                    btnB9.BackColor = Color.DodgerBlue;
-                    totalClicks = 1;
-                }
-                else
-                {
-                    totalClicks++; sequenceAmt++;
-                    if (clickAmt == 0)
-                    {
-                        btnB9.BackColor = Color.Green;
-                        listSample.Items.Add("B9");
-                        clickAmt++;
-                    }
-                    else if (clickAmt == 1)
-                    {
-                        btnB9.BackColor = Color.Red;
-                        listPad.Items.Add("B9");
-                        clickAmt = 0;
-                    }
-                    txtSleepTime.Enabled = true;
-                    sleepCase = 1;
-                }
-                btnB9.Enabled = false;
-            }
-        }
-
-        private void btnB10_Click(object sender, EventArgs e)
-        {
-            if ((sleepCase != 1) && (ENDCASE != 1))
-            {
-                listCurrentSeq.Items.Add("B10");
-                if (sequenceAmt == seqAmtMax) //final case
-                {
-                    btnB10.BackColor = Color.Yellow; ENDCASE = 1;
-                }
-                else if (totalClicks == 0) //intial case
-                {
-                    btnB10.BackColor = Color.DodgerBlue;
-                    totalClicks = 1;
-                }
-                else
-                {
-                    totalClicks++; sequenceAmt++;
-                    if (clickAmt == 0)
-                    {
-                        btnB10.BackColor = Color.Green;
-                        listSample.Items.Add("B10");
-                        clickAmt++;
-                    }
-                    else if (clickAmt == 1)
-                    {
-                        btnB10.BackColor = Color.Red;
-                        listPad.Items.Add("B10");
-                        clickAmt = 0;
-                    }
-                    txtSleepTime.Enabled = true;
-                    sleepCase = 1;
-                }
-                btnB10.Enabled = false;
-            }
-        }
-
-        private void btnB11_Click(object sender, EventArgs e)
-        {
-            if ((sleepCase != 1) && (ENDCASE != 1))
-            {
-                listCurrentSeq.Items.Add("B11");
-                if (sequenceAmt == seqAmtMax) //final case
-                {
-                    btnB11.BackColor = Color.Yellow; ENDCASE = 1;
-                }
-                else if (totalClicks == 0) //intial case
-                {
-                    btnB11.BackColor = Color.DodgerBlue;
-                    totalClicks = 1;
-                }
-                else
-                {
-                    totalClicks++; sequenceAmt++;
-                    if (clickAmt == 0)
-                    {
-                        btnB11.BackColor = Color.Green;
-                        listSample.Items.Add("B11");
-                        clickAmt++;
-                    }
-                    else if (clickAmt == 1)
-                    {
-                        btnB11.BackColor = Color.Red;
-                        listPad.Items.Add("B11");
-                        clickAmt = 0;
-                    }
-                    txtSleepTime.Enabled = true;
-                    sleepCase = 1;
-                }
-                btnB11.Enabled = false;
-            }
-        }
-
-        private void btnB12_Click(object sender, EventArgs e)
-        {
-            if ((sleepCase != 1) && (ENDCASE != 1))
-            {
-                listCurrentSeq.Items.Add("B12");
-                if (sequenceAmt == seqAmtMax) //final case
-                {
-                    btnB12.BackColor = Color.Yellow; ENDCASE = 1;
-                }
-                else if (totalClicks == 0) //intial case
-                {
-                    btnB12.BackColor = Color.DodgerBlue;
-                    totalClicks = 1;
-                }
-                else
-                {
-                    totalClicks++; sequenceAmt++;
-                    if (clickAmt == 0)
-                    {
-                        btnB12.BackColor = Color.Green;
-                        listSample.Items.Add("B12");
-                        clickAmt++;
-                    }
-                    else if (clickAmt == 1)
-                    {
-                        btnB12.BackColor = Color.Red;
-                        listPad.Items.Add("B12");
-                        clickAmt = 0;
-                    }
-                    txtSleepTime.Enabled = true;
-                    sleepCase = 1;
-                }
-                btnB12.Enabled = false;
+                sequenceAmt++;
             }
         }
 
@@ -955,7 +683,7 @@ namespace ComPort
             {
                 listCurrentSeq.Items.Add(txtSleepTime.Text);
                 txtSleepTime.Clear();
-                sleepCase = 0;
+                sleepCase = 0; sequenceAmt++;
                 txtSleepTime.Enabled = false;
             }
         }
@@ -970,10 +698,10 @@ namespace ComPort
             btnA6.BackColor = Control.DefaultBackColor;
             btnA7.BackColor = Control.DefaultBackColor;
             btnA8.BackColor = Control.DefaultBackColor;
-            btnA9.BackColor = Control.DefaultBackColor;
-            btnA10.BackColor = Control.DefaultBackColor;
-            btnA11.BackColor = Control.DefaultBackColor;
-            btnA12.BackColor = Control.DefaultBackColor;
+            //btnA9.BackColor = Control.DefaultBackColor;
+            //btnA10.BackColor = Control.DefaultBackColor;
+            //btnA11.BackColor = Control.DefaultBackColor;
+            //btnA12.BackColor = Control.DefaultBackColor;
             btnB1.BackColor = Control.DefaultBackColor;
             btnB2.BackColor = Control.DefaultBackColor;
             btnB3.BackColor = Control.DefaultBackColor;
@@ -982,10 +710,10 @@ namespace ComPort
             btnB6.BackColor = Control.DefaultBackColor;
             btnB7.BackColor = Control.DefaultBackColor;
             btnB8.BackColor = Control.DefaultBackColor;
-            btnB9.BackColor = Control.DefaultBackColor;
-            btnB10.BackColor = Control.DefaultBackColor;
-            btnB11.BackColor = Control.DefaultBackColor;
-            btnB12.BackColor = Control.DefaultBackColor; 
+            //btnB9.BackColor = Control.DefaultBackColor;
+            //btnB10.BackColor = Control.DefaultBackColor;
+            //btnB11.BackColor = Control.DefaultBackColor;
+            //btnB12.BackColor = Control.DefaultBackColor; 
             btnA1.UseVisualStyleBackColor = true;
             btnA2.UseVisualStyleBackColor = true;
             btnA3.UseVisualStyleBackColor = true;
@@ -994,10 +722,10 @@ namespace ComPort
             btnA6.UseVisualStyleBackColor = true;
             btnA7.UseVisualStyleBackColor = true;
             btnA8.UseVisualStyleBackColor = true;
-            btnA9.UseVisualStyleBackColor = true;
-            btnA10.UseVisualStyleBackColor = true;
-            btnA11.UseVisualStyleBackColor = true;
-            btnA12.UseVisualStyleBackColor = true;
+            //btnA9.UseVisualStyleBackColor = true;
+            //btnA10.UseVisualStyleBackColor = true;
+            //btnA11.UseVisualStyleBackColor = true;
+            //btnA12.UseVisualStyleBackColor = true;
             btnB1.UseVisualStyleBackColor = true;
             btnB2.UseVisualStyleBackColor = true;
             btnB3.UseVisualStyleBackColor = true;
@@ -1006,10 +734,10 @@ namespace ComPort
             btnB6.UseVisualStyleBackColor = true;
             btnB7.UseVisualStyleBackColor = true;
             btnB8.UseVisualStyleBackColor = true;
-            btnB9.UseVisualStyleBackColor = true;
-            btnB10.UseVisualStyleBackColor = true;
-            btnB11.UseVisualStyleBackColor = true;
-            btnB12.UseVisualStyleBackColor = true;
+            //btnB9.UseVisualStyleBackColor = true;
+            //btnB10.UseVisualStyleBackColor = true;
+            //btnB11.UseVisualStyleBackColor = true;
+            //btnB12.UseVisualStyleBackColor = true;
             btnA1.Enabled = false;
             btnA2.Enabled = false;
             btnA3.Enabled = false;
@@ -1018,10 +746,10 @@ namespace ComPort
             btnA6.Enabled = false;
             btnA7.Enabled = false;
             btnA8.Enabled = false;
-            btnA9.Enabled = false;
-            btnA10.Enabled = false;
-            btnA11.Enabled = false;
-            btnA12.Enabled = false;
+            //btnA9.Enabled = false;
+            //btnA10.Enabled = false;
+            //btnA11.Enabled = false;
+            //btnA12.Enabled = false;
             btnB1.Enabled = false;
             btnB2.Enabled = false;
             btnB3.Enabled = false;
@@ -1030,10 +758,10 @@ namespace ComPort
             btnB6.Enabled = false;
             btnB7.Enabled = false;
             btnB8.Enabled = false;
-            btnB9.Enabled = false;
-            btnB10.Enabled = false;
-            btnB11.Enabled = false;
-            btnB12.Enabled = false;
+            //btnB9.Enabled = false;
+            //btnB10.Enabled = false;
+            //btnB11.Enabled = false;
+            //btnB12.Enabled = false;
             txtSequenceAmt.Clear();
             txtSequenceAmt.Enabled = true;
             txtSleepTime.Enabled = false;
@@ -1059,10 +787,10 @@ namespace ComPort
                 btnA6.Enabled = true;
                 btnA7.Enabled = true;
                 btnA8.Enabled = true;
-                btnA9.Enabled = true;
-                btnA10.Enabled = true;
-                btnA11.Enabled = true;
-                btnA12.Enabled = true;
+                //btnA9.Enabled = true;
+                //btnA10.Enabled = true;
+                //btnA11.Enabled = true;
+                //btnA12.Enabled = true;
                 btnB1.Enabled = true;
                 btnB2.Enabled = true;
                 btnB3.Enabled = true;
@@ -1071,10 +799,10 @@ namespace ComPort
                 btnB6.Enabled = true;
                 btnB7.Enabled = true;
                 btnB8.Enabled = true;
-                btnB9.Enabled = true;
-                btnB10.Enabled = true;
-                btnB11.Enabled = true;
-                btnB12.Enabled = true;
+                //btnB9.Enabled = true;
+                //btnB10.Enabled = true;
+                //btnB11.Enabled = true;
+                //btnB12.Enabled = true;
                 txtSequenceAmt.Enabled = false;
             }
         }
